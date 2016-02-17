@@ -3,10 +3,7 @@ package com.aruld.jersey.multipart;
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.FormDataParam;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 
 import static javax.ws.rs.core.MediaType.*;
 
@@ -33,4 +30,9 @@ public class MultiPartResource {
         return Response.ok(entity).build();
     }
 
+    @GET
+    @Path("ping")
+    public String ping() {
+        return "pong";
+    }
 }

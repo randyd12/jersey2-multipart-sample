@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  */
 public class App {
     public static final URI BASE_URI = URI.create("http://localhost:8080/");
-    public static final String ROOT_PATH = "multipart";
+    public static final String ROOT_PATH = "jersey2-multipart-sample/multipart";
     private static final Logger LOGGER = Logger.getLogger(App.class.getName());
 
     public static void main(String[] args) {

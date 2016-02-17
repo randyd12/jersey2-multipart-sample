@@ -17,11 +17,11 @@
         </license>
     </licenses>
 
-    <scm>
-        <connection>scm:git:git@github.com:aruld/jersey2-multipart-sample.git</connection>
-        <developerConnection>scm:git:git@github.com:aruld/jersey2-multipart-sample.git</developerConnection>
-        <url>git@github.com:aruld/jersey2-multipart-sample.git</url>
-    </scm>
+    <!--<scm>-->
+        <!--<connection>scm:git:git@github.com:aruld/jersey2-multipart-sample.git</connection>-->
+        <!--<developerConnection>scm:git:git@github.com:aruld/jersey2-multipart-sample.git</developerConnection>-->
+        <!--<url>git@github.com:aruld/jersey2-multipart-sample.git</url>-->
+    <!--</scm>-->
 
     <developers>
         <developer>
