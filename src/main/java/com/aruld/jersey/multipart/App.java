@@ -16,21 +16,25 @@ import java.util.logging.Logger;
  */
 public class App {
     public static final URI BASE_URI = URI.create("http://localhost:8080/");
-    public static final String ROOT_PATH = "jersey2-multipart-sample/multipart";
+    public static final String ROOT_PATH = "multipart";
     private static final Logger LOGGER = Logger.getLogger(App.class.getName());
 
-    public static void main(String[] args) {
-        try {
-            System.out.println("\"MultiPart\" Jersey Example App");
-            final ResourceConfig resourceConfig = new ResourceConfig(MultiPartResource.class);
-            resourceConfig.registerInstances(new LoggingFilter(LOGGER, true));
-            resourceConfig.register(MultiPartFeature.class);
-            final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, resourceConfig);
-            System.out.println(String.format("Application started.\nTry out %s%s\nHit enter to stop it...", BASE_URI, ROOT_PATH));
-            System.in.read();
-            server.shutdown();
-        } catch (IOException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
-        }
-    }
+
+    //used for starting the jetty app
+
+
+//    public static void main(String[] args) {
+//        try {
+//            System.out.println("\"MultiPart\" Jersey Example App");
+//            final ResourceConfig resourceConfig = new ResourceConfig(MultiPartResource.class);
+//            resourceConfig.registerInstances(new LoggingFilter(LOGGER, true));
+//            resourceConfig.register(MultiPartFeature.class);
+//            final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, resourceConfig);
+//            System.out.println(String.format("Application started.\nTry out %s%s\nHit enter to stop it...", BASE_URI, ROOT_PATH));
+//            System.in.read();
+//            server.shutdown();
+//        } catch (IOException ex) {
+//            LOGGER.log(Level.SEVERE, null, ex);
+//        }
+//    }
 }
