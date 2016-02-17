@@ -28,7 +28,7 @@ public class App {
             final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, resourceConfig);
             System.out.println(String.format("Application started.\nTry out %s%s\nHit enter to stop it...", BASE_URI, ROOT_PATH));
             System.in.read();
-            server.stop();
+            server.shutdown();
         } catch (IOException ex) {
             LOGGER.log(Level.SEVERE, null, ex);
         }

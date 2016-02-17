@@ -17,12 +17,6 @@
         </license>
     </licenses>
 
-    <!--<scm>-->
-        <!--<connection>scm:git:git@github.com:aruld/jersey2-multipart-sample.git</connection>-->
-        <!--<developerConnection>scm:git:git@github.com:aruld/jersey2-multipart-sample.git</developerConnection>-->
-        <!--<url>git@github.com:aruld/jersey2-multipart-sample.git</url>-->
-    <!--</scm>-->
-
     <developers>
         <developer>
             <id>aruld</id>
@@ -32,7 +26,8 @@
     </developers>
 
     <properties>
-        <jersey.version>2.0-m12</jersey.version>
+        <!--<jersey.version>2.0-m12</jersey.version>-->
+        <jersey.version>2.22.2</jersey.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -61,6 +56,13 @@
             <version>${jersey.version}</version>
             <type>pom</type>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.0</version>
+            <type>jar</type>
         </dependency>
 
     </dependencies>
